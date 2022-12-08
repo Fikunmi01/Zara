@@ -1,0 +1,79 @@
+:root {
+  --swiper-theme-color: #383838;
+}
+
+.mySwiper {
+  position: relative;
+  background-color: #fff;
+}
+
+.slider-div .slider-div-images {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.slider-div-images .slide-image-one {
+  width: 28rem;
+  /* opacity: 100%; */
+  height: 100%;
+  /* margin-left: 5%; */
+  padding-top: 5%;
+}
+
+.slider-div-images .logo {
+  width: 15.5rem;
+  height: 12rem;
+  padding-top: 10%;
+  right: 50%;
+  position: absolute;
+}
+
+.swiper-slide {
+  height: 52rem !important;
+}
+
+.slider-div-images .slide-image-two {
+  width: 75%;
+  margin-left: 18%;
+}
+
+.swiper-pagination-bullet > img {
+  background: url(../slideControl.png);
+  height: 1.5rem;
+  width: 3rem;
+  gap: 3rem;
+  display: flex;
+}
+
+.swiper-pagination-bullet-active > img {
+  height: 2rem;
+}
+.slider-div-images p {
+  display: none;
+}
+
+.swiper {
+  height: 82vh;
+}
+
+@media screen and (max-width: 600px) {
+  .grain-texture {
+    visibility: hidden;
+  }
+
+  .logo {
+    visibility: hidden;
+  }
+
+  .slider-div-images {
+    bottom: 2rem;
+  }
+
+  .slide-image-one {
+    position: absolute;
+    width: 60% !important;
+    height: 60% !important;
+    opacity: 100%;
+  }
+}

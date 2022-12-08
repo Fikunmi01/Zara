@@ -1,0 +1,22 @@
+.ekd {
+  position: relative;
+  top: -100vh;
+}
+
+.ssa {
+  margin-top: 15rem;
+}
+
+.landp {
+  overflow: hidden;
+}
+
+.bgOpa {
+  position: absolute;
+  z-index: 99;
+  opacity: 3%;
+}
+
+.bgOpa img {
+  height: 122vh !important;
+}

@@ -1,0 +1,374 @@
+.navbar {
+  display: flex;
+  background-color: inherit;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 8rem;
+  z-index: 1;
+  height: 14rem;
+  padding-right: 8rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-menu P {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 1.5rem;
+  color: #383838;
+}
+
+.nav-menu img {
+  cursor: pointer;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center {
+  display: flex;
+}
+
+.nav-center p {
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 1.4rem;
+  color: #383838;
+  letter-spacing: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-end {
+  font-family: "Gotham Pro", sans-serif;
+  letter-spacing: 1.5rem;
+  color: #383838;
+  font-size: 1.4rem;
+}
+
+.long-line {
+  padding-right: 1rem;
+}
+
+.short-line {
+  padding-right: 3rem;
+}
+
+.nav-end span {
+  padding-left: 2rem;
+  color: #383838;
+}
+
+.menu {
+  height: 39rem;
+  padding-bottom: 11.4%;
+  padding-top: 4%;
+  background-color: #e5e5e5;
+  top: 10rem;
+  width: 100%;
+  left: 0%;
+  position: absolute;
+  z-index: 1;
+}
+
+.first-menu-link {
+  border-bottom: 0.1rem solid #a8a8a8;
+}
+
+.first-menu-link a {
+  color: white;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 8rem;
+  text-shadow: -1px 1px 0 #a8a8a8, 1px 1px 0 #a8a8a8, 1px -1px 0 #a8a8a8,
+    -1px -1px 0 #a8a8a8;
+  padding-left: 15rem;
+  margin-top: 5rem;
+}
+
+.first-menu-link a:hover {
+  color: #313131;
+}
+
+.second-menu-link {
+  display: flex;
+  padding-left: 37rem;
+  gap: 28rem;
+  border-bottom: 0.1rem solid #a8a8a8;
+}
+
+.second-menu-link a {
+  color: white;
+  font-family: "Gotham Pro", sans-serif;
+  font-size: 8rem;
+  text-shadow: -1px 1px 0 #a8a8a8, 1px 1px 0 #a8a8a8, 1px -1px 0 #a8a8a8,
+    -1px -1px 0 #a8a8a8;
+  margin-top: 5rem;
+}
+
+.second-menu-link a:hover {
+  color: #313131;
+}
+
+.third-menu-link {
+  border-bottom: 0.1rem solid #a8a8a8;
+  display: flex;
+  gap: 50rem;
+  padding-left: 10.5rem;
+}
+
+.third-menu-link a {
+  color: white;
+  font-family: "Gotham Pro", sans-serif;
+  display: flex;
+  font-size: 8rem;
+  text-shadow: -1px 1px 0 #a8a8a8, 1px 1px 0 #a8a8a8, 1px -1px 0 #a8a8a8,
+    -1px -1px 0 #a8a8a8;
+  margin-top: 5rem;
+}
+
+.third-menu-link a:hover {
+  color: #313131;
+}
+
+.search-input {
+  position: absolute;
+  top: 12rem;
+  display: flex;
+  left: 0rem;
+  background-color: #ffffff;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  padding-top: 22rem;
+  padding-bottom: 29.2rem;
+}
+
+.search-input input {
+  font-size: 5.2rem;
+  outline: none;
+  text-align: center;
+  font-style: italic;
+  font-family: "Gotham Pro", sans-serif;
+  border: none;
+  border-bottom: 0.1rem solid #d2d2d2;
+  padding-bottom: 0.5rem;
+}
+
+input:placeholder-shown {
+  font-weight: 400;
+  font-family: "Gotham Pro", sans-serif;
+  width: 94rem;
+  font-style: light;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    padding-left: 5%;
+    height: 10rem;
+    bottom: 2.8rem;
+    overflow: hidden;
+  }
+
+  .nav-menu img {
+    width: 15%;
+  }
+
+  .nav-menu {
+    gap: 10%;
+  }
+
+  #hamburger-link p {
+    font-size: 1.2rem;
+  }
+
+  .nav-center {
+    visibility: hidden;
+  }
+
+  .nav-end {
+    padding-right: 5%;
+  }
+
+  .nav-end img {
+    display: none;
+  }
+
+  .nav-end p {
+    font-size: 1.2rem;
+  }
+
+  .nav-end span {
+    font-size: 1.2rem;
+  }
+}
+
+/* @media screen and (max-width:600px) {
+    .nav-center {
+        display: none;
+    }
+
+    .nav-menu{
+        left: 5%;
+        position: absolute;
+        gap: 10%;
+    }   
+
+    .nav-menu img {
+        width: 2rem;
+    }
+
+    .nav-menu p {
+        font-size: 120%;
+
+    }
+
+    .nav-end p {
+        font-size: 90%;
+    }
+
+    .nav-end span {
+        font-size: 90%;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .nav-end img {
+        display: none;
+    }
+
+    .nav-end  {
+        position: absolute;
+        right: 0%;
+    }
+
+    .menu {
+        display: block;
+        height: 85.5vh!important;
+    }
+
+    .first-menu-link {
+        height: 6vh;
+        margin-top: 10%;
+    }
+
+    .first-menu-link a {
+        font-size: 3.5rem;
+        padding-left: 5%;
+    }
+
+    .second-menu-link {
+        height: 30vh;
+        display: flex;
+        gap: 0rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .second-menu-link a {
+        padding-left: 5%;
+        margin-top: 0rem;
+        font-size: 3.5rem;
+    }
+    
+    .third-menu-link {
+        display: flex;
+        gap: 0rem;
+        padding-left: 0rem;
+        flex-direction: column;
+        border-top: none;
+        height: 30vh;
+        border-bottom: none;
+    }
+
+    .third-menu-link a {
+        margin-top: 0rem;
+    }
+
+    #shoes {
+        margin-top: 13.5%;
+        border-bottom: 0.1rem solid #a8a8a8;
+    }
+
+    #furniture {
+        margin-top: 13.5%;
+        border-bottom: 0.1rem solid #a8a8a8;
+    }
+
+    #stories {
+        margin-top: 13.5%;
+        border-bottom: 0.1rem solid #a8a8a8;
+    }
+
+    #sale {
+        margin-top: 13.5%;
+    }
+    
+    .third-menu-link a  {
+        margin-top: 0rem;
+        font-size: 3.5rem;
+        padding-left: 5%;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:600px) {
+    .nav-menu p{
+        font-size: 1.2rem;
+    }
+
+    .nav-menu {
+        gap: 10%;
+    }
+    
+    .navbar {
+        left: -8%;
+    }
+
+    .nav-menu img {
+        width: 18%;
+    }
+
+    .nav-end {
+        right: -15%;
+        position: absolute;
+    }
+    
+    .nav-end p {
+        font-size: 1.2rem;
+    }
+
+    .nav-end span {
+        font-size: 1.2rem;
+    }
+
+    .nav-end .long-line {
+        width: 20%;
+    }
+
+    .nav-end .short-line {
+        width: 5%;
+    }
+    
+    .nav-center p{
+        background-color: blue;
+        font-size: 1.2rem;
+    }
+
+    .nav-center {
+        display: none;
+    }
+} */

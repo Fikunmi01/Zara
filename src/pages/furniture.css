@@ -165,34 +165,3 @@
   text-transform: uppercase;
   font-size: 1.4rem;
 }
-
-@media screen and (max-width: 600px) {
-  .non-active p {
-    position: relative;
-    left: 3rem;
-  }
-
-  .active-two-heading {
-    position: relative;
-  }
-
-  #size-genLaptop {
-    left: -0.4rem;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .non-active p {
-    position: relative;
-    left: 3rem;
-  }
-
-  .active-two-heading {
-    position: relative;
-  }
-
-  #size-genLaptop {
-    left: -2.2rem;
-    position: relative;
-  }
-}

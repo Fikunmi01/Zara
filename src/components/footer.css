@@ -53,23 +53,22 @@
   padding-left: 2rem;
 }
 
-/* @media screen and (max-width:600px) {
-    .square-container {
-        width: 100%;
-    }
 
-    .square-container a {
-        visibility: hidden;
-    }
+@media screen and (max-width:768px) {
+  .square-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .square-container a {
+    visibility: hidden;
+    font-size: 100%;
+    left: 4%;
+    position: relative;
+  }
 
-    .square-container .active-footer-link {
-        visibility: visible;
-        font-size: 100%;
-        left: -5%;
-
-        padding-left: 0%;
-        position: relative;
-    }
-
-   
-} */
+  .active-footer-link {
+    visibility: visible!important;
+    
+  }
+}

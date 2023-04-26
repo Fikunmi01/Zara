@@ -32,10 +32,6 @@ export default function LandingPage() {
 
   return (
     <div className="landp">
-      <div className="bgOpa">
-        <img src="../images/heroImgTwo.png" alt="phoneBg" />
-      </div>
-
       <div className="ssa">
         <Slide />
       </div>

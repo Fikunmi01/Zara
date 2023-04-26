@@ -98,14 +98,11 @@
 
 .non-active {
   display: flex;
-  /* position: absolute; */
   font-size: 1.4rem;
   padding-top: 2.5rem;
   color: #383838;
   font-family: "Gotham Pro", sans-serif;
   align-items: center;
-  /* width: 22%; */
-  /* margin: auto; */
 }
 
 .active-two-heading select {
@@ -163,63 +160,87 @@
   font-size: 1.4rem;
 }
 
-@media screen and (min-width: 600px) {
-  /* . */
+.spaNone {
+  display: block;
 }
-/* 
-@media screen and (max-width:600px) {
- 
-    .side-nav {
-        display: none!important;
-    }
 
-    .side-nav-two {
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .side-nav {
+    visibility: hidden;
+  }
 
-    .sideNavTwo {
-        display: flex!important;
-        flex-direction: row!important;
-        width: 100%;
-        margin-bottom: 3%;
-        left: 0%!important; */
-/* overflow: scroll; */
-/* }
+  .side-nav-two {
+    visibility: hidden;
+  }
 
-    .parent {
-        padding-left: 0%!important;
-        justify-content: center;
-        display: flex;
-    }
+  .spaNone {
+    margin: auto;
+    width: 100%;
+  }
+}
 
-    .child img {
-        width: 100%!important;
-    } */
+@media screen and (max-width:425px) {
+  .main-products-div {
+    left: 14%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+}
 
-/* .sideNavTwo a {
-        width: 100%;
-    }
+@media screen and (max-width: 375px) {
+  .main-products-div {
+    left: 14%;
+    position: relative;
+  }
+}
 
-    .child  {
-        margin-bottom: 20%!important;
-    }
+@media screen and (max-width:320px) {
+  .main-products-div {
+    left: 18%;
+    position: relative;
+  }
+}
 
-} */
+@media screen and (min-width:768.1px) {
+  
+}
 
-/* 
-@media screen and (min-width:600px) {
-    .side-nav {
-        position: relative;
-    }
+@media screen and (min-width: 1024px) {
+  .active-two-heading {
+    position: relative;
+  }
 
-    .active-two-heading {
-        gap: 3.5rem;
-        right: 2.6rem!important;
-    }
+  .active-two-heading p {
+    margin-left: 1rem;
+  }
 
-    .active-two-heading .active {
-        left: 4rem;
-        position: relative;
-    }
+  .main-products-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+  }
 
-} */
+  .spaNone {
+    width: 76%;
+  }
+
+  .spaNtwo {
+    width: 24%;
+  }
+
+  .side-nav-two {
+    position: relative;
+  }
+
+  .non-active {
+    position: relative;
+    margin-right: 2.4rem;
+  }
+
+  .non-active p {
+    width: 1rem;
+    left: 0rem;
+  }
+}

@@ -56,113 +56,115 @@ export default function Man() {
           <Link to="/sale">Sale</Link>
         </div>
 
-        {manProducts &&
-          manProducts.map((menItem) => (
-            <div key={menItem.id} className="parent">
-              <div className="child">
-                <img src={menItem.images} alt="men products" />
-                <p
-                  onClick={() => console.log(menItem.title())}
-                  className="title-description"
-                >
-                  {menItem.title}
-                </p>
+        <div className="main-products-div">
+          <span className="spaNone">
+            {manProducts &&
+              manProducts.map((menItem) => (
+                <div key={menItem.id} className="parent">
+                  <div className="child">
+                    <img src={menItem.images} alt="men products" />
+                    <p
+                      onClick={() => console.log(menItem.title())}
+                      className="title-description"
+                    >
+                      {menItem.title}
+                    </p>
 
-                <p className="price">${menItem.price}</p>
+                    <p className="price">${menItem.price}</p>
+                  </div>
+                </div>
+              ))}
+          </span>
+
+          <span className="spaNtwo">
+            <div className="side-nav">
+              <Link to="/clothes">Clothes</Link>
+
+              <Link to="/shoes" className="active">
+                <img src="../images/longLine.png" alt="active png line" />
+                Shoes
+              </Link>
+
+              <Link to="/furniture">Furniture</Link>
+
+              <Link to="/sale">Sale</Link>
+            </div>
+
+            <div className="side-nav-two">
+              <div className="active-two-heading" style={{marginBottom:`2rem`}}>
+                <hr
+                  style={{
+                    color: "#D2DED2",
+                    width: "17rem",
+                    position: "absolute",
+                    bottom: "4rem",
+                    right: "4rem",
+                    paddingRight: `10%`,
+                  }}
+                />
+
+                <p id="size-genLaptop">Size</p>
+
+                <select>
+                  <option>S, M, L</option>
+
+                  <option>S</option>
+
+                  <option>M</option>
+
+                  <option>L</option>
+                </select>
+              </div>
+
+              <div className="active-two-heading " style={{marginBottom:`2rem`}}>
+                <p>Color</p>  
+
+                <select>
+                  <option>Any</option>
+
+                  <option>Red</option>
+
+                  <option>Blue</option>
+
+                  <option>Black</option>
+
+                  <option>Grey</option>
+
+                  <option>Yellow</option>
+
+                  <option>Orange</option>
+                </select>
+              </div>
+
+              <div className=" active-two-heading" style={{marginBottom:`2rem`}}>
+                <p>Additional</p>
+
+                <select>
+                  <option>Any</option>
+
+                  <option>S</option>
+
+                  <option>M</option>
+
+                  <option>L</option>
+                </select>
+              </div>
+
+              <div className=" active-two-heading " style={{marginBottom:`2rem`}}>
+                <p>Price</p>
+
+                <select>
+                  <option>Any</option>
+
+                  <option>S</option>
+
+                  <option>M</option>
+
+                  <option>L</option>
+                </select>
               </div>
             </div>
-          ))}
-
-        <div className="side-nav">
-          <Link to="/clothes">Clothes</Link>
-
-          <Link to="/shoes" className="active">
-            <img src="../images/longLine.png" alt="active png line" />
-            Shoes
-          </Link>
-
-          <Link to="/furniture">Furniture</Link>
-
-          <Link to="/sale">Sale</Link>
-        </div>
-
-        <div className="side-nav-two">
-          <div className="active-two-heading">
-            <img
-              src="../images/shortLine.png"
-              alt="short active png"
-              className="active"
-            />
-
-            <hr
-              style={{
-                color: "#D2DED2",
-                width: "17rem",
-                position: "absolute",
-                bottom: "4rem",
-                right: "4rem",
-              }}
-            />
-            <p id="size-genLaptop">Size</p>
-
-            <select>
-              <option>S, M, L</option>
-
-              <option>S</option>
-
-              <option>M</option>
-
-              <option>L</option>
-            </select>
-          </div>
-
-          <div className="non-active">
-            <p>Color</p>
-
-            <select>
-              <option>Any</option>
-
-              <option>Red</option>
-
-              <option>Blue</option>
-
-              <option>Black</option>
-
-              <option>Grey</option>
-
-              <option>Yellow</option>
-
-              <option>Orange</option>
-            </select>
-          </div>
-
-          <div className=" non-active  div-two">
-            <p>Additional</p>
-
-            <select>
-              <option>Any</option>
-
-              <option>S</option>
-
-              <option>M</option>
-
-              <option>L</option>
-            </select>
-          </div>
-
-          <div className=" non-active  div-three">
-            <p>Price</p>
-
-            <select>
-              <option>Any</option>
-
-              <option>S</option>
-
-              <option>M</option>
-
-              <option>L</option>
-            </select>
-          </div>
+          </span>
         </div>
       </div>
 

@@ -6,18 +6,7 @@ export default function Navbar() {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [search, setSearch] = React.useState(false);
 
-  const menu = {
-    height: "41rem",
-    paddingBottom: "11.4%",
-    paddingTop: "4%",
-    backgroundColor: "#e5e5e5",
-    top: "13rem",
-    width: "100%",
-    left: "0%",
-    position: "absolute",
-    zIndex: "1",
-  };
-
+  
   return (
     <>
       <div className="navbar ">
@@ -26,6 +15,7 @@ export default function Navbar() {
             <img
               src="../images/hamburgerClose.png"
               alt="hamburger icon"
+              className="closeIcon"
               onClick={() => setToggleMenu(false)}
             />
 
@@ -49,7 +39,7 @@ export default function Navbar() {
 
         {toggleMenu && (
           <>
-            <div style={menu} className="menu">
+            <div className="menu">
               <div className="first-menu-link">
                 <Link id="clothes" to="/clothes">
                   Clothes

@@ -23,6 +23,7 @@ export default function Slide() {
           delay: 3500,
           disableOnInteraction: false,
         }}
+        id="swiper-slide"
         pagination={{
           clickable: true,
         }}
@@ -30,7 +31,7 @@ export default function Slide() {
       >
         {Data.map((heroSlide, i) => (
           <div key={heroSlide.id}>
-            <SwiperSlide key={heroSlide.id}>
+            <SwiperSlide  key={heroSlide.id}>
               <div className="slides">
                 <div className="slider-div">
                   <div className="slider-div-images">

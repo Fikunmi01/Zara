@@ -20,3 +20,11 @@
 .bgOpa img {
   height: 122vh !important;
 }
+
+
+
+@media screen and (max-width:600px) {
+  .ssa {
+    height: 65vh;
+  }
+}

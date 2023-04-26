@@ -165,3 +165,43 @@
   text-transform: uppercase;
   font-size: 1.4rem;
 }
+
+
+@media screen and (min-width: 1024px) {
+  .active-two-heading {
+    position: relative;
+  }
+
+  .active-two-heading p {
+    margin-left: 1rem;
+  }
+
+  .main-products-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .spaNone {
+    width: 76%;
+  }
+
+  .spaNtwo {
+    width: 24%;
+  }
+
+  .side-nav-two {
+    position: relative;
+  }
+
+  .non-active {
+    position: relative;
+    margin-right: 2.4rem;
+  }
+
+  .non-active p {
+    width: 1rem;
+    left: 0rem;
+  }
+}
